@@ -1,0 +1,42 @@
+{
+  "name": "ng-statuspage",
+  "description": "An Angular 1.x library to interact with StatusPage.iong-",
+  "version": "0.0.0",
+  "author": {
+    "name": "Richard Harrah",
+    "email": "topplethenunnery@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nunnery/ng-statuspage.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.0.2",
+    "eslint": "^3.14.1",
+    "eslint-config-google": "^0.7.1",
+    "gulp": "gulpjs/gulp#4ed9a4a3275559c73a396eff7e1fde3824951ebb",
+    "gulp-concat": "^2.6.1",
+    "gulp-config-sync": "^1.0.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-hub": "frankwallis/gulp-hub#d461b9c700df9010d0a8694e4af1fb96d9f38bf4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8",
+    "jasmine": "^2.5.3",
+    "karma": "^1.4.1",
+    "karma-angular-filesort": "^1.0.2",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-ng-html2js-preprocessor": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-phantomjs-shim": "^1.4.0",
+    "lodash": "^4.17.4",
+    "phantomjs-prebuilt": "^2.1.14",
+    "wiredep": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=5.0.0"
+  }
+}
