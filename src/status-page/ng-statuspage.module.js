@@ -10,12 +10,10 @@
     });
 
   // Modules
-  angular.module('ng-statuspage.providers', []);
   angular.module('ng-statuspage.services', []);
   angular.module('ng-statuspage',
     [
       'ng-statuspage.config',
-      'ng-statuspage.providers',
       'ng-statuspage.services',
       'ngResource',
     ]);
