@@ -11,5 +11,10 @@ module.exports = function listFiles() {
     conf.path.src('**/*.js')
   ]);
 
-  return patterns.map(pattern => ({pattern}));
+  const files = patterns.map(pattern => ({pattern}));
+  files.push({
+    pattern: conf.path.mocks('**/*.json'),
+    included: false,
+  });
+  return files;
 };

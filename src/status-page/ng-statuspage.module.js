@@ -11,10 +11,8 @@
 
   // Modules
   angular.module('ng-statuspage.services', []);
-  angular.module('ng-statuspage',
-    [
-      'ng-statuspage.config',
-      'ng-statuspage.services',
-      'ngResource',
-    ]);
+  angular.module('ng-statuspage', [
+    'ng-statuspage.config',
+    'ng-statuspage.services',
+  ]);
 })(angular);

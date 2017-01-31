@@ -13,10 +13,7 @@ function isFixed(file) {
 
 function scripts() {
   return gulp.src(conf.path.src('**/*.js'))
-    .pipe(eslint({
-      fix: true
-    }))
-    .pipe(gulpIf(isFixed, gulp.dest(conf.paths.src)))
+    .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 }
