@@ -9,7 +9,11 @@ const conf = require('../conf/gulp.conf');
 gulp.task('build', build);
 
 function build() {
-  return gulp.src(conf.path.src('**/*.js'))
+  let sources = [
+    conf.path.src('**/*.js'),
+    `!${conf.path.src('**/*.spec.js')}`
+  ];
+  return gulp.src(sources)
     .pipe(sourcemaps.init())
     .pipe(concat('ng-statuspage.js'))
     .pipe(gulp.dest(conf.paths.dist))

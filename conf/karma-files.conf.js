@@ -8,16 +8,8 @@ module.exports = function listFiles() {
   });
 
   const patterns = wiredep(wiredepOptions).js.concat([
-    conf.path.tmp('**/*.js'),
-    conf.path.src('**/*.html')
+    conf.path.src('**/*.js')
   ]);
 
-  const files = patterns.map(pattern => ({pattern}));
-  files.push({
-    pattern: conf.path.src('assets/**/*'),
-    included: false,
-    served: true,
-    watched: false
-  });
-  return files;
+  return patterns.map(pattern => ({pattern}));
 };

@@ -16,3 +16,7 @@ libpeerconnection.log
 
 # Bower components
 bower_components
+
+# Test Output
+coverage/
+test/

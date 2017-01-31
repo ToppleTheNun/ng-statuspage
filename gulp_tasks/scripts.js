@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const eslint = require('gulp-eslint');
+const gulpIf = require('gulp-if');
 
 const conf = require('../conf/gulp.conf');
 
@@ -15,6 +16,7 @@ function scripts() {
     .pipe(eslint({
       fix: true
     }))
+    .pipe(gulpIf(isFixed, gulp.dest(conf.paths.src)))
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 }

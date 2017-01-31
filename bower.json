@@ -15,10 +15,9 @@
     "url": "https://github.com/Nunnery/ng-statuspage.git"
   },
   "devDependencies": {
-    "angular-mocks": ">=1.2.0",
-    "angular-scenario": ">=1.2.0",
-    "angular": ">=1.2.0",
-    "angular-resource": ">=1.2.0"
+    "angular-mocks": ">=1.4.0",
+    "angular": ">=1.4.0",
+    "angular-resource": ">=1.4.0"
   },
   "authors": [
     "Richard Harrah <topplethenunnery@gmail.com>"

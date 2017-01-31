@@ -8,7 +8,11 @@ module.exports = function (config) {
     autoWatch: false,
     logLevel: 'INFO',
     junitReporter: {
-      outputDir: 'test-reports'
+      outputDir: 'coverage'
+    },
+    coverageReporter: {
+      type: 'html',
+      dir: 'coverage/'
     },
     browsers: [
       'PhantomJS'
@@ -18,10 +22,16 @@ module.exports = function (config) {
       'jasmine',
       'angular-filesort'
     ],
+    reporters: [
+      'dots', 'coverage', 'junit'
+    ],
     files: listFiles(),
     preprocessors: {
       [conf.path.src('**/*.html')]: [
         'ng-html2js'
+      ],
+      [conf.path.src('**/*.js')]: [
+        'coverage'
       ]
     },
     ngHtml2JsPreprocessor: {

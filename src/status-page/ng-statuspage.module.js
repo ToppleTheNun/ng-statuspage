@@ -5,28 +5,18 @@
 
   // Config
   angular.module('ng-statuspage.config', [])
-      .value('ng-statusPage.config', {
-          debug: true,
-      });
+    .value('ng-statusPage.config', {
+      debug: true,
+    });
 
   // Modules
   angular.module('ng-statuspage.providers', []);
   angular.module('ng-statuspage.services', []);
   angular.module('ng-statuspage',
-      [
-          'ng-statuspage.config',
-          'ng-statuspage.providers',
-          'ng-statuspage.services',
-          'ngResource',
-      ]);
+    [
+      'ng-statuspage.config',
+      'ng-statuspage.providers',
+      'ng-statuspage.services',
+      'ngResource',
+    ]);
 })(angular);
-
-(function() {
-
-  angular.module('ng-statuspage.providers')
-})();
-
-(function() {
-
-  angular.module('ng-statuspage.services')
-})();
