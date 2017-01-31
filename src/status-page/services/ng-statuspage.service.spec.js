@@ -5,7 +5,7 @@ describe('ng-statuspage.services', function() {
 
   describe('true', function() {
     it('is truthy', function() {
- expect(true).toBeTruthy();
-});
+      expect(true).toBeTruthy();
+    });
   });
 });
