@@ -1,8 +1,8 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
+const ngAnnotate = require('gulp-ng-annotate');
 
 const conf = require('../conf/gulp.conf');
 
@@ -14,8 +14,8 @@ function build() {
     `!${conf.path.src('**/*.spec.js')}`
   ];
   return gulp.src(sources)
-    .pipe(sourcemaps.init())
     .pipe(concat('ng-statuspage.js'))
+    .pipe(ngAnnotate())
     .pipe(gulp.dest(conf.paths.dist))
     .pipe(uglify())
     .pipe(rename('ng-statuspage.min.js'))
