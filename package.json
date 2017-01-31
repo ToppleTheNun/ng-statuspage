@@ -2,6 +2,7 @@
   "name": "ng-statuspage",
   "description": "An Angular 1.x library to interact with StatusPage.iong-",
   "version": "0.0.0",
+  "main": "dist/ng-statuspage.js",
   "author": {
     "name": "Richard Harrah",
     "email": "topplethenunnery@gmail.com"
